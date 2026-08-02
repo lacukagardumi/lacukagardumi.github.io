@@ -253,8 +253,10 @@ footer a:hover{color:var(--cream);}
       <span class="eyebrow" style="text-align:left;">Par mani</span>
       <h2>Sveiki!</h2>
       <p class="lead">Esmu Sintija — mājražotāja un konditorejas "Lāčuka Gardumi" radītāja.</p>
-      <p>Ikdienā strādāju par inženieri, bet jau vairāk nekā septiņus gadus mana lielākā aizraušanās ir kūku cepšana.</p>
-      <p>Katru kūku gatavoju individuāli pēc pasūtījuma, izmantojot kvalitatīvas sastāvdaļas un rūpīgi pārdomātu noformējumu.</p>
+      <p>Ikdienā strādāju par inženieri, bet jau vairāk nekā septiņus gadus mana lielākā aizraušanās ir kūku cepšana. Ar mīlestību un rūpību radu gardumus, kas iepriecina manus draugus un klientus.</p>
+      <p>Tā radās "Lāčuka Gardumi". Nosaukums radies no mana pirmslaulību uzvārda Lāce, kas man ir ļoti mīļš un simbolisks. </p>
+      <p>Katru kūku gatavoju individuāli pēc pasūtījuma, izmantojot kvalitatīvas sastāvdaļas un rūpīgi pārdomātu noformējumu. </p>
+      <p>Man ir svarīgi, lai katra kūka būtu ne tikai garšīga, bet arī vizuāli pievilcīga un atbilstu Jūsu vēlmēm.</p>
       <div class="heart-note">🤎 Lāčuka Gardumi ir PVD reģistrēta nr. 105292 mājražotāja</div>
     </div>
     <div class="photo-frame about-photo reveal">
@@ -456,7 +458,7 @@ footer a:hover{color:var(--cream);}
       <p style="color:var(--blush); max-width:480px; margin:0 auto 26px;">Uzraksti Instagram DM vai e-pastu ar datumu, garšu un svaru — pārējo sakārtosim kopā</p>
       <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
         <a href="https://www.instagram.com/lacuka.gardumi/" target="_blank" rel="noopener" class="btn" style="background:var(--cream); color:var(--maroon-deep);">Rakstīt Instagram DM</a>
-        <a href="mailto:lacuka.gardumi@gmail.com" class="btn btn-ghost" style="border-color:rgba(251,244,234,.5); color:var(--cream);">lacuka.gardumi@gmail.com</a>
+        <a href="#" class="btn btn-ghost email-link" data-user="lacuka.gardumi" data-domain="gmail.com" style="border-color:rgba(251,244,234,.5); color:var(--cream);">lacuka.gardumi (at) gmail.com</a>
       </div>
     </div>
   </div>
@@ -473,7 +475,7 @@ footer a:hover{color:var(--cream);}
         <h4>Sazinies</h4>
         <ul>
           <li><a href="https://www.instagram.com/lacuka.gardumi/" target="_blank" rel="noopener">@lacuka.gardumi</a></li>
-          <li><a href="mailto:lacuka.gardumi@gmail.com">lacuka.gardumi at gmail.com</a></li>
+          <li><a href="#" class="email-link" data-user="lacuka.gardumi" data-domain="gmail.com">lacuka.gardumi (at) gmail.com</a></li>
         </ul>
       </div>
       <div>
@@ -494,6 +496,16 @@ footer a:hover{color:var(--cream);}
 </footer>
 
 <script>
+  document.querySelectorAll('.email-link').forEach(function(a){
+    const user = a.getAttribute('data-user');
+    const domain = a.getAttribute('data-domain');
+    if (user && domain) {
+      const addr = user + '@' + domain;
+      a.href = 'mailto:' + addr;
+      a.textContent = addr;
+    }
+  });
+
   const menuBtn = document.getElementById('menuBtn');
   const navList = document.getElementById('navList');
   menuBtn.addEventListener('click', () => {
