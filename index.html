@@ -146,6 +146,7 @@ header{position:sticky; top:0; z-index:50; background:rgba(251,244,234,0.9); bac
 .sub-card{background:var(--blush); border-radius:var(--radius); overflow:hidden; border:1px solid rgba(59,36,21,.08);}
 .sub-card .photo-slot{border-radius:0; aspect-ratio:16/11; border-width:0 0 1px; border-style:dashed; border-color:rgba(59,36,21,.15);}
 .sub-card .photo-frame{border-radius:0; aspect-ratio:16/11;}
+.sub-card .photo-frame img{object-fit:contain; background:var(--blush);}
 .sub-card-body{padding:24px;}
 .sub-card h3{font-size:18px;}
 .sub-card ul{list-style:none; padding:0; margin:10px 0 0; font-size:14px; color:var(--brown-mid);}
@@ -337,7 +338,7 @@ footer a:hover{color:var(--cream);}
         <div class="photo-frame"><img src="assets/bento.jpg" alt="Bento kūciņa ar sirsniņām" loading="lazy"></div>
         <div class="sub-card-body">
           <h3>Bento kūciņas</h3>
-          <p style="font-size:13.5px;">Mazas kūciņas īpašiem notikumiem.</p>
+          <p style="font-size:13.5px;">Mazas kūciņas īpašiem mirkļiem</p>
           <ul>
             <li>Valentīndiena</li>
             <li>Sieviešu diena</li>
@@ -351,16 +352,16 @@ footer a:hover{color:var(--cream);}
         <div class="photo-frame"><img src="assets/cepumi.jpg" alt="Krokainie šokolādes cepumi" loading="lazy"></div>
         <div class="sub-card-body">
           <h3>Cepumi</h3>
-          <p style="font-size:13.5px;">Krokainie šokolādes cepumi ar kraukšķīgu gareniņu un mīkstu viduci.</p>
+          <p style="font-size:13.5px;">Krokainie šokolādes cepumi ar kraukšķīgu garoziņu un mīkstu viduci</p>
           <div class="price" style="font-size:18px; margin-top:10px;">26 €/kg</div>
           <div class="min">Minimums 300 g, iepakoti kastītē</div>
         </div>
       </div>
       <div class="sub-card reveal">
-        <div class="photo-slot"><span>Keksiņu foto</span></div>
+        <div class="photo-frame"><img src="assets/keksini.jpg" alt="Keksiņi" loading="lazy"></div>
         <div class="sub-card-body">
           <h3>Keksiņi</h3>
-          <p style="font-size:13.5px;">Gardi un skaisti keksiņi dažādiem svētkiem</p>
+          <p style="font-size:13.5px;">Gardi un skaisti keksiņi svētkiem</p>
         </div>
       </div>
     </div>
@@ -378,17 +379,30 @@ footer a:hover{color:var(--cream);}
       <div class="step">
         <div class="step-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20h16M6 20V11a6 6 0 0 1 12 0v9"/><path d="M6 14h12"/></svg><span class="step-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
         <h4>1. Izvēlies kūku</h4>
-        <p>Apskaties piedāvājumu</p>
+        <p>Apskati piedāvājumu un izvēlies kūku</p>
       </div>
       <div class="step">
         <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.5"/><circle cx="16.2" cy="7.8" r=".8"/></svg><span class="step-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-        <h4>2. Raksti Instagram DM</h4>
-        <p>Sāc sarunu par pasūtījumu</p>
-      </div>
+        <h4>2. Nosaki vēlamo svaru</h4>
+        <p>Minimālais pasūtījums kūkām 1.5 kg, ciparkūkai 1 cipars.  </p>
+        <p>Rekomendēju rēķināt ap 120 g/personai</p>
+             </div>
       <div class="step">
         <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 4h6a1 1 0 0 1 1 1v1H8V5a1 1 0 0 1 1-1z"/><rect x="6" y="6" width="12" height="15" rx="2"/><path d="M9 12h6M9 16h4"/></svg><span class="step-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-        <h4>3. Norādi detaļas</h4>
-        <p>Datums, garša, svars, noformējums</p>
+        <h4>3. Uzraksti man Instagram vai e-pastā</h4>
+        <p>Lūdzu norādi:</p>
+        <p>izvēlēto kūku</p>
+        <p>vēlamo svaru</p>
+        <p>īpašās vēlmes par dizainu </p>
+        <div class="step">
+        <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 4h6a1 1 0 0 1 1 1v1H8V5a1 1 0 0 1 1-1z"/><rect x="6" y="6" width="12" height="15" rx="2"/><path d="M9 12h6M9 16h4"/></svg><span class="step-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <h4>4. Pasūtījuma datums</h4>
+        <p>Un aptuvenais izņemšanas laiks</p>
+                <div class="step">
+        <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 4h6a1 1 0 0 1 1 1v1H8V5a1 1 0 0 1 1-1z"/><rect x="6" y="6" width="12" height="15" rx="2"/><path d="M9 12h6M9 16h4"/></svg><span class="step-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <h4>5. Kontaktinformācija</h4>
+        <p>Vārds un telefona numurs</p>
+      
       </div>
       <div class="step">
         <div class="step-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg><span class="step-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
