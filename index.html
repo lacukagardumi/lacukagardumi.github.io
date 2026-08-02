@@ -170,9 +170,9 @@ header{position:sticky; top:0; z-index:50; background:rgba(251,244,234,0.9); bac
 .order-note-title{font-family:'Lora',serif; font-weight:600; color:var(--maroon); font-size:16px; margin-bottom:14px;}
 .order-note ul{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:9px; font-size:14px; color:var(--brown-dark);}
 
-/* info 3 col */
-.info3{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
-@media(max-width:900px){.info3{grid-template-columns:1fr;}}
+/* info 2 col */
+.info3{display:grid; grid-template-columns:repeat(2,1fr); gap:22px; max-width:820px; margin:0 auto;}
+@media(max-width:700px){.info3{grid-template-columns:1fr;}}
 .info-card{background:var(--blush); border-radius:var(--radius); padding:30px; border:1px solid rgba(59,36,21,.08);}
 .info-card h3{font-size:16px; text-align:center; letter-spacing:.03em; text-transform:uppercase;}
 .check-list{list-style:none; padding:0; margin:16px 0 0; font-size:14px; color:var(--brown-dark);}
@@ -183,6 +183,13 @@ header{position:sticky; top:0; z-index:50; background:rgba(251,244,234,0.9); bac
 .stars{color:var(--gold); font-size:14px; letter-spacing:2px; margin-bottom:8px;}
 .testi{font-style:italic; font-size:14.5px; color:var(--brown-dark); margin-bottom:16px; padding-left:14px; border-left:2px solid var(--gold);}
 .testi:last-child{margin-bottom:0;}
+
+/* testimonials */
+.testi-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+@media(max-width:900px){.testi-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.testi-grid{grid-template-columns:1fr;}}
+.testi-card{background:var(--blush); border-radius:var(--radius); padding:26px; border:1px solid rgba(59,36,21,.08);}
+.testi-card .testi{margin-bottom:0;}
 
 /* footer */
 footer{background:var(--maroon-deep); color:var(--cream-2); padding:56px 0 26px;}
@@ -440,12 +447,49 @@ footer a:hover{color:var(--cream);}
           <span class="value">105292</span>
         </div>
       </div>
-      <div class="info-card">
-        <h3>Atsauksmes</h3>
+    </div>
+  </div>
+</section>
+
+<section id="atsauksmes" style="background:var(--cream-2);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Klienti stāsta</span>
+      <h2>Atsauksmes</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="testi-grid reveal">
+      <div class="testi-card">
         <div class="stars">★★★★★</div>
-        <p class="testi">Liels paldies!!! Kūka ir dievīga un noformējums prezīci pēc vēlmēm - askētiski! Uz nākamo sadarbību!!</p>
+        <p class="testi">Paldies, liels! Ļoti garda kūka🙏🥰</p>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi">Sveika, jā paldies torte bija ļoti garšīga! 🍓🍰🙏 Svaiga, patīkama garša. Mums tik mazliet prasījās, lai ir kremīgāka. Paldies par gardo torti! 🙏</p>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi">Paldies, ļoti garšīga torte bija!🥰</p>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi">Tikko uztaisīju īsu reels par kūciņu, bija dievīgi garšīga 💖</p>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi">Ļoti laba. Gandrīz viens pats noeda🤣 Bija super garšīga❤️</p>
+      </div>
+      <div class="testi-card">
         <div class="stars">★★★★★</div>
         <p class="testi">Paldies, ļoti garšīga kūka un cepumi. Skaists dekors!👌</p>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi">Labdien! Tieši vēlējos Jums šodien rakstīt. Liels paldies par kūku, fantastiski garšīga, viena no garšīgākajām kādas ēstas. Bērns bija laimīgs. No visas sirds pateicos!</p>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi">Liels paldies!!! Kūka ir dievīga un noformējums precīzi pēc vēlmēm - askētiski! Uz nākamo sadarbību!!</p>
       </div>
     </div>
   </div>
