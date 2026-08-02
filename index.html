@@ -142,8 +142,9 @@ header{position:sticky; top:0; z-index:50; background:rgba(251,244,234,0.9); bac
 @media(max-width:900px){ .g1,.g2,.g3,.g4,.g5,.g6{grid-column:auto; grid-row:auto;} }
 
 /* secondary offerings */
-.sub-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
-@media(max-width:860px){.sub-grid{grid-template-columns:1fr;}}
+.sub-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:24px;}
+@media(max-width:980px){.sub-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.sub-grid{grid-template-columns:1fr;}}
 .sub-card{background:var(--blush); border-radius:var(--radius); overflow:hidden; border:1px solid rgba(59,36,21,.08);}
 .sub-card .photo-slot{border-radius:0; aspect-ratio:16/11; border-width:0 0 1px; border-style:dashed; border-color:rgba(59,36,21,.15);}
 .sub-card .photo-frame{border-radius:0; aspect-ratio:16/11;}
@@ -317,6 +318,66 @@ footer a:hover{color:var(--cream);}
         </div>
       </div>
     </div>
+
+    <div class="section-head reveal" style="margin:60px auto 40px;">
+      <span class="eyebrow">Papildu iespējas</span>
+      <h3 style="font-size:clamp(22px,3vw,28px);">Vēl pieejams</h3>
+      <div class="divider"></div>
+    </div>
+    <div class="sub-grid">
+      <div class="sub-card reveal">
+        <div class="photo-slot"><span>Ciparkūkas foto</span></div>
+        <div class="sub-card-body">
+          <h3>Ciparkūka</h3>
+          <p style="font-size:13.5px;">Medus biskvīts, krēmsiera krēms</p>
+          <div class="price" style="font-size:18px; margin-top:10px;">35 €/cipars</div>
+          <div class="min">Svars ap 1,3 kg</div>
+          <ul>
+            <li>Standarta noformējums iekļauts cenā</li>
+            <li>Mastikas figūras no 5 €</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sub-card reveal">
+        <div class="photo-frame"><img src="assets/bento.jpg" alt="Bento kūciņa ar sirsniņām" loading="lazy"></div>
+        <div class="sub-card-body">
+          <h3>Bento kūciņas</h3>
+          <p style="font-size:13.5px;">Mazas kūciņas īpašiem mirkļiem</p>
+          <ul>
+            <li>Valentīndiena</li>
+            <li>Sieviešu diena</li>
+            <li>Mēneškūciņas</li>
+            <li>Baby shower</li>
+            <li>Citi īpaši brīži</li>
+          </ul>
+          <div class="price" style="font-size:18px; margin-top:10px;">20 €/gab.</div>
+          <div class="min">Svars ap 450 g</div>
+        </div>
+      </div>
+      <div class="sub-card reveal">
+        <div class="photo-frame"><img src="assets/cepumi.jpg" alt="Krokainie šokolādes cepumi" loading="lazy"></div>
+        <div class="sub-card-body">
+          <h3>Cepumi</h3>
+          <ul>
+            <li>Krokainie šokolādes cepumi</li>
+            <li>Cepumi ar šokolādes gabaliņiem</li>
+            <li>Auzu pārslu cepumi ar žāvētām dzērvenēm</li>
+          </ul>
+          <div class="price" style="font-size:18px; margin-top:10px;">26 €/kg</div>
+          <div class="min">Minimālais pasūtījums — 10 cepumi (~30 g/gab.)</div>
+        </div>
+      </div>
+      <div class="sub-card reveal">
+        <div class="photo-frame"><img src="assets/keksini.jpg" alt="Keksiņi" loading="lazy"></div>
+        <div class="sub-card-body">
+          <h3>Keksiņi</h3>
+          <p style="font-size:13.5px;">Šokolādes keksiņi ar šokolādes gabaliņiem un krēma cepurīti</p>
+          <div class="price" style="font-size:18px; margin-top:10px;">2,50 €/gab.</div>
+          <div class="min">Minimālais pasūtījums 12 gab.</div>
+        </div>
+      </div>
+    </div>
+
     <div class="center-cta reveal">
       <a href="https://www.instagram.com/lacuka.gardumi/" target="_blank" rel="noopener" class="btn btn-primary">Pasūtīt Instagram</a>
     </div>
@@ -340,47 +401,6 @@ footer a:hover{color:var(--cream);}
     </div>
     <div class="center-cta reveal">
       <a href="https://www.instagram.com/lacuka.gardumi/" target="_blank" rel="noopener" class="btn btn-primary">Skatīt vairāk Instagram</a>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="sub-grid">
-      <div class="sub-card reveal">
-        <div class="photo-frame"><img src="assets/bento.jpg" alt="Bento kūciņa ar sirsniņām" loading="lazy"></div>
-        <div class="sub-card-body">
-          <h3>Bento kūciņas</h3>
-          <p style="font-size:13.5px;">Mazas kūciņas īpašiem mirkļiem</p>
-          <ul>
-            <li>Valentīndiena</li>
-            <li>Sieviešu diena</li>
-            <li>Mēneškūciņas</li>
-            <li>Baby shower</li>
-            <li>Citi īpaši brīži</li>
-          </ul>
-          <div class="price" style="font-size:18px; margin-top:10px;">20 €/gab.</div>
-          <div class="min">Svars ap 450 g</div>
-        </div>
-      </div>
-      <div class="sub-card reveal">
-        <div class="photo-frame"><img src="assets/cepumi.jpg" alt="Krokainie šokolādes cepumi" loading="lazy"></div>
-        <div class="sub-card-body">
-          <h3>Cepumi</h3>
-          <p style="font-size:13.5px;">Cepumi ar šokolādes gabaliņiem, krokainie šokolādes cepumi, auzu pārslu cepumi ar žāvētām dzērvenēm</p>
-          <div class="price" style="font-size:18px; margin-top:10px;">26 €/kg</div>
-          <div class="min">Minimums 300 g, iepakoti kastītē</div>
-        </div>
-      </div>
-      <div class="sub-card reveal">
-        <div class="photo-frame"><img src="assets/keksini.jpg" alt="Keksiņi" loading="lazy"></div>
-        <div class="sub-card-body">
-          <h3>Keksiņi</h3>
-          <p style="font-size:13.5px;">Gardi un skaisti keksiņi svētkiem</p>
-          <div class="price" style="font-size:18px; margin-top:10px;">2,50 €/gab.</div>
-          <div class="min">Minimālais pasūtījums 12 gab.</div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
