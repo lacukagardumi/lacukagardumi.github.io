@@ -161,9 +161,13 @@ header{position:sticky; top:0; z-index:50; background:rgba(251,244,234,0.9); bac
 .step-icon{width:76px; height:76px; border-radius:50%; background:var(--blush); display:flex; align-items:center; justify-content:center; margin:0 auto 16px; color:var(--maroon);}
 @media(max-width:900px){.step-icon{position:absolute; left:0; top:0; margin:0; width:56px; height:56px;}}
 .step h4{font-size:15px; margin-bottom:5px;}
-.step p{font-size:13px; color:var(--brown-mid); margin:0;}
+.step p{font-size:13px; color:var(--brown-mid); margin:0; line-height:1.6;}
 .step-arrow{position:absolute; top:38px; right:-14px; color:var(--brown-soft);}
 @media(max-width:900px){.step-arrow{display:none;}}
+
+.order-note{max-width:440px; margin:48px auto 0; background:var(--cream); border:1px solid rgba(59,36,21,.1); border-radius:16px; padding:26px 30px; text-align:center;}
+.order-note-title{font-family:'Lora',serif; font-weight:600; color:var(--maroon); font-size:16px; margin-bottom:14px;}
+.order-note ul{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:9px; font-size:14px; color:var(--brown-dark);}
 
 /* info 3 col */
 .info3{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
@@ -377,43 +381,39 @@ footer a:hover{color:var(--cream);}
     </div>
     <div class="steps reveal">
       <div class="step">
-        <div class="step-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20h16M6 20V11a6 6 0 0 1 12 0v9"/><path d="M6 14h12"/></svg><span class="step-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-        <h4>1. Izvēlies kūku</h4>
-        <p>Apskati piedāvājumu un izvēlies kūku</p>
+        <div class="step-icon"><span style="font-size:28px; line-height:1;">🌿</span><span class="step-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <h4>1. Izvēlies</h4>
+        <p>Apskati piedāvājumu un izvēlies kūku, cepumus vai keksiņus</p>
       </div>
       <div class="step">
-        <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.5"/><circle cx="16.2" cy="7.8" r=".8"/></svg><span class="step-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <div class="step-icon"><span style="font-size:28px; line-height:1;">🌿</span><span class="step-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
         <h4>2. Nosaki vēlamo svaru</h4>
-        <p>Minimālais pasūtījums kūkām 1.5 kg, ciparkūkai 1 cipars.  </p>
-        <p>Rekomendēju rēķināt ap 120 g/personai</p>
-             </div>
+        <p>Minimālais pasūtījums kūkām no 1,5 kg, ciparkūkai — 1 cipars<br>Rekomendēju rēķināt ap 120 g/personai<br>Cepumiem — min. 300 g<br>Keksiņiem — min. 12 gab.</p>
+      </div>
       <div class="step">
-        <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 4h6a1 1 0 0 1 1 1v1H8V5a1 1 0 0 1 1-1z"/><rect x="6" y="6" width="12" height="15" rx="2"/><path d="M9 12h6M9 16h4"/></svg><span class="step-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-        <h4>3. Uzraksti man Instagram vai e-pastā</h4>
-        <p>Lūdzu norādi:</p>
-        <p>izvēlēto kūku</p>
-        <p>vēlamo svaru</p>
-        <p>īpašās vēlmes par dizainu </p>
-        <div class="step">
-        <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 4h6a1 1 0 0 1 1 1v1H8V5a1 1 0 0 1 1-1z"/><rect x="6" y="6" width="12" height="15" rx="2"/><path d="M9 12h6M9 16h4"/></svg><span class="step-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <div class="step-icon"><span style="font-size:28px; line-height:1;">🌿</span><span class="step-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+        <h4>3. Uzraksti man DM</h4>
+        <p>Lūdzu norādi:<br>izvēlēto kūku, cepumus vai keksiņus<br>vēlamo svaru<br>īpašās vēlmes par dizainu</p>
+      </div>
+      <div class="step">
+        <div class="step-icon"><span style="font-size:28px; line-height:1;">🌿</span><span class="step-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
         <h4>4. Pasūtījuma datums</h4>
         <p>Un aptuvenais izņemšanas laiks</p>
-                <div class="step">
-        <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 4h6a1 1 0 0 1 1 1v1H8V5a1 1 0 0 1 1-1z"/><rect x="6" y="6" width="12" height="15" rx="2"/><path d="M9 12h6M9 16h4"/></svg><span class="step-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      </div>
+      <div class="step">
+        <div class="step-icon"><span style="font-size:28px; line-height:1;">🌿</span></div>
         <h4>5. Kontaktinformācija</h4>
         <p>Vārds un telefona numurs</p>
-      
       </div>
-      <div class="step">
-        <div class="step-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg><span class="step-arrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-        <h4>4. Apstiprinu pasūtījumu</h4>
-        <p>Pasūtījums tiek ieplānots</p>
-      </div>
-      <div class="step">
-        <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 8v13M4 8h16v4H4zM12 8c-1.5-4-6-4-6-1s3 1 6 1M12 8c1.5-4 6-4 6-1s-3 1-6 1"/></svg></div>
-        <h4>5. Saņem Mārupē</h4>
-
-      </div>
+    </div>
+    <div class="order-note reveal">
+      <div class="order-note-title">Izņemšana Mārupē</div>
+      <ul>
+        <li>🗓 Sestdienās</li>
+        <li>⏰ 9 - 12</li>
+        <li>🚫 Piegāde netiek piedāvāta</li>
+        <li>✨ Katrs pasūtījums tiek saskaņots individuāli</li>
+      </ul>
     </div>
   </div>
 </section>
