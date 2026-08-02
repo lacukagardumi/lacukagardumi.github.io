@@ -118,8 +118,9 @@ header{position:sticky; top:0; z-index:50; background:rgba(251,244,234,0.9); bac
 @media(max-width:560px){.cards{grid-template-columns:1fr;}}
 .card{background:var(--cream-2); border-radius:var(--radius); overflow:hidden; border:1px solid rgba(59,36,21,.08); transition:transform .25s, box-shadow .25s;}
 .card:hover{transform:translateY(-6px); box-shadow:var(--shadow);}
-.card .photo-slot{border-radius:0; aspect-ratio:1/0.85; border-width:0 0 1px; border-style:dashed; border-color:rgba(59,36,21,.15);}
-.card .photo-frame{border-radius:0; aspect-ratio:1/0.85;}
+.card .photo-slot{border-radius:0; aspect-ratio:9/16; border-width:0 0 1px; border-style:dashed; border-color:rgba(59,36,21,.15);}
+.card .photo-frame{border-radius:0; aspect-ratio:9/16;}
+.card .photo-frame img{object-fit:contain; background:var(--cream-2);}
 .card-body{padding:22px 22px 26px;}
 .card h3{font-size:17px; letter-spacing:.04em; text-transform:uppercase; margin-bottom:8px;}
 .card p{font-size:13.5px; color:var(--brown-mid); margin-bottom:14px;}
