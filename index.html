@@ -18,6 +18,9 @@
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="apple-touch-icon" href="assets/logo.png">
 
+<!-- Preload LCP Hero Image (Core Web Vitals) -->
+<link rel="preload" as="image" href="assets/hero.webp" type="image/webp" fetchpriority="high">
+
 <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://lacukagardumi.lv/">
@@ -323,7 +326,7 @@ footer a:hover{color:var(--cream);}
 
 <header>
   <div class="nav">
-    <a href="#" class="brand"><img src="assets/logo.png" alt="Lāčuka Gardumi logo"></a>
+    <a href="#" class="brand"><img src="assets/logo.webp" alt="Lāčuka Gardumi logo" width="68" height="68" decoding="async"></a>
     <button class="menu-btn" id="menuBtn" aria-label="Atvērt izvēlni" aria-expanded="false"><span></span><span></span><span></span></button>
     <ul id="navList">
       <li><a href="#sakums">Sākums</a></li>
@@ -342,9 +345,10 @@ footer a:hover{color:var(--cream);}
   </div>
 </header>
 
+<main>
 <section id="sakums" class="hero">
   <div class="hero-media">
-    <img src="assets/hero.jpg" alt="Lāčuka Gardumi kūka ar zemenēm un bezē, elegantā noformējumā" loading="eager">
+    <img src="assets/hero.webp" alt="Lāčuka Gardumi kūka ar zemenēm un bezē, elegantā noformējumā" width="1536" height="1024" fetchpriority="high" loading="eager" decoding="async">
     <div class="hero-media-overlay"></div>
   </div>
   <div class="hero-content">
@@ -374,7 +378,7 @@ footer a:hover{color:var(--cream);}
       <div class="heart-note">🤎 Lāčuka Gardumi ir PVD reģistrēta nr. 105292 mājražotāja</div>
     </div>
     <div class="photo-frame about-photo reveal">
-      <img src="assets/about.jpg" alt="Sintija — Lāčuka Gardumi radītāja" loading="lazy">
+      <img src="assets/about.webp" alt="Sintija — Lāčuka Gardumi radītāja" width="1050" height="1400" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
@@ -388,7 +392,7 @@ footer a:hover{color:var(--cream);}
     </div>
     <div class="cards">
       <div class="card reveal">
-        <div class="photo-frame"><img src="assets/flavor-snickers.jpg" alt="Snickers kūka šķēle" loading="lazy"></div>
+        <div class="photo-frame"><img src="assets/flavor-snickers.webp" alt="Snickers kūka šķēle" width="383" height="677" loading="lazy" decoding="async"></div>
         <div class="card-body">
           <h3>Snickers</h3>
           <p>Šokolādes biskvīts, tumšās šokolādes ganāšs, karamele, grauzdēti zemesrieksti, krēmsiera krēms</p>
@@ -397,7 +401,7 @@ footer a:hover{color:var(--cream);}
         </div>
       </div>
       <div class="card reveal">
-        <div class="photo-frame"><img src="assets/flavor-zemenu.jpg" alt="Zemeņu plombīra kūka šķēle" loading="lazy"></div>
+        <div class="photo-frame"><img src="assets/flavor-zemenu.webp" alt="Zemeņu plombīra kūka šķēle" width="384" height="676" loading="lazy" decoding="async"></div>
         <div class="card-body">
           <h3>Zemeņu plombīrs</h3>
           <p>Amerikāņu biskvīts, plombīra krēms, zemeņu mērce, krēmsiera krēms</p>
@@ -406,7 +410,7 @@ footer a:hover{color:var(--cream);}
         </div>
       </div>
       <div class="card reveal">
-        <div class="photo-frame"><img src="assets/flavor-velvets.jpg" alt="Sarkanā velveta kūka šķēle" loading="lazy"></div>
+        <div class="photo-frame"><img src="assets/flavor-velvets.webp" alt="Sarkanā velveta kūka šķēle" width="287" height="517" loading="lazy" decoding="async"></div>
         <div class="card-body">
           <h3>Sarkanais velvets</h3>
           <p>Sarkanā velveta biskvīts, krēmsiera krēms, ogu mērce (zemenes / ķirši / dzērvenes)</p>
@@ -415,7 +419,7 @@ footer a:hover{color:var(--cream);}
         </div>
       </div>
       <div class="card reveal">
-        <div class="photo-frame"><img src="assets/flavor-medus.jpg" alt="Medus kūkas šķēle" loading="lazy"></div>
+        <div class="photo-frame"><img src="assets/flavor-medus.webp" alt="Medus kūkas šķēle" width="288" height="512" loading="lazy" decoding="async"></div>
         <div class="card-body">
           <h3>Medus kūka</h3>
           <p>Medus biskvīts, skābā krējuma krēms</p>
@@ -432,7 +436,7 @@ footer a:hover{color:var(--cream);}
     </div>
     <div class="sub-grid">
       <div class="sub-card reveal">
-        <div class="photo-frame"><img src="assets/ciparkuka.jpg" alt="Ciparkūka" loading="lazy"></div>
+        <div class="photo-frame"><img src="assets/ciparkuka.webp" alt="Ciparkūka" width="1194" height="1200" loading="lazy" decoding="async"></div>
         <div class="sub-card-body">
           <h3>Ciparkūka</h3>
           <p style="font-size:13.5px;">Medus biskvīts, krēmsiera krēms</p>
@@ -441,7 +445,7 @@ footer a:hover{color:var(--cream);}
         </div>
       </div>
       <div class="sub-card reveal">
-        <div class="photo-frame"><img src="assets/figurina.jpg" alt="Mastikas figūriņa" loading="lazy"></div>
+        <div class="photo-frame"><img src="assets/figurina.webp" alt="Mastikas figūriņa" width="900" height="1200" loading="lazy" decoding="async"></div>
         <div class="sub-card-body">
           <h3>Mastikas figūriņas</h3>
           <p style="font-size:13.5px;">Roku darbs, pēc individuāla pieprasījuma</p>
@@ -449,7 +453,7 @@ footer a:hover{color:var(--cream);}
         </div>
       </div>
       <div class="sub-card reveal">
-        <div class="photo-frame"><img src="assets/bento.jpg" alt="Bento kūciņa ar sirsniņām" loading="lazy"></div>
+        <div class="photo-frame"><img src="assets/bento.webp" alt="Bento kūciņa ar sirsniņām" width="908" height="1200" loading="lazy" decoding="async"></div>
         <div class="sub-card-body">
           <h3>Bento kūciņas</h3>
           <p style="font-size:13.5px;">Mazas kūciņas īpašiem mirkļiem</p>
@@ -465,7 +469,7 @@ footer a:hover{color:var(--cream);}
         </div>
       </div>
       <div class="sub-card reveal">
-        <div class="photo-frame"><img src="assets/cepumi.jpg" alt="Krokainie šokolādes cepumi" loading="lazy"></div>
+        <div class="photo-frame"><img src="assets/cepumi.webp" alt="Krokainie šokolādes cepumi" width="903" height="1200" loading="lazy" decoding="async"></div>
         <div class="sub-card-body">
           <h3>Cepumi</h3>
           <ul>
@@ -478,7 +482,7 @@ footer a:hover{color:var(--cream);}
         </div>
       </div>
       <div class="sub-card reveal">
-        <div class="photo-frame"><img src="assets/keksini.jpg" alt="Keksiņi" loading="lazy"></div>
+        <div class="photo-frame"><img src="assets/keksini.webp" alt="Keksiņi" width="900" height="1200" loading="lazy" decoding="async"></div>
         <div class="sub-card-body">
           <h3>Keksiņi</h3>
           <p style="font-size:13.5px;">Šokolādes keksiņi ar šokolādes gabaliņiem un krēma cepurīti</p>
@@ -502,12 +506,12 @@ footer a:hover{color:var(--cream);}
       <div class="divider"></div>
     </div>
     <div class="gallery-grid reveal">
-      <div class="photo-frame g1"><img src="assets/gallery-1.jpg" alt="Zemeņu un bezē kūka" loading="lazy"></div>
-      <div class="photo-frame g2"><img src="assets/gallery-2.jpg" alt="Kūka ar ziedu dekoru" loading="lazy"></div>
-      <div class="photo-frame g3"><img src="assets/gallery-3.jpg" alt="Kūka ar krēma ziediem" loading="lazy"></div>
-      <div class="photo-frame g4"><img src="assets/gallery-4.jpg" alt="Kūka ar mellenēm un kazenēm" loading="lazy"></div>
-      <div class="photo-frame g5"><img src="assets/gallery-5.jpg" alt="Krokainie šokolādes cepumi" loading="lazy"></div>
-      <div class="photo-frame g6"><img src="assets/cake-featured.jpg" alt="Zemeņu kūka ar bezē, profesionāli apstrādāta" loading="lazy"></div>
+      <div class="photo-frame g1"><img src="assets/gallery-1.webp" alt="Zemeņu un bezē kūka" width="647" height="1400" loading="lazy" decoding="async"></div>
+      <div class="photo-frame g2"><img src="assets/gallery-2.webp" alt="Kūka ar ziedu dekoru" width="462" height="1000" loading="lazy" decoding="async"></div>
+      <div class="photo-frame g3"><img src="assets/gallery-3.webp" alt="Kūka ar krēma ziediem" width="462" height="1000" loading="lazy" decoding="async"></div>
+      <div class="photo-frame g4"><img src="assets/gallery-4.webp" alt="Kūka ar mellenēm un kazenēm" width="647" height="1400" loading="lazy" decoding="async"></div>
+      <div class="photo-frame g5"><img src="assets/gallery-5.webp" alt="Krokainie šokolādes cepumi" width="739" height="1600" loading="lazy" decoding="async"></div>
+      <div class="photo-frame g6"><img src="assets/cake-featured.webp" alt="Zemeņu kūka ar bezē, profesionāli apstrādāta" width="801" height="1100" loading="lazy" decoding="async"></div>
     </div>
     <div class="center-cta reveal">
       <a href="https://www.instagram.com/lacuka.gardumi/" target="_blank" rel="noopener" class="btn btn-primary">Skatīt vairāk Instagram</a>
@@ -642,12 +646,13 @@ footer a:hover{color:var(--cream);}
     </div>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand"><img src="assets/logo.png" alt="Lāčuka Gardumi logo"><span>Lāčuka Gardumi</span></div>
+        <div class="footer-brand"><img src="assets/logo.webp" alt="Lāčuka Gardumi logo" width="44" height="44" loading="lazy" decoding="async"><span>Lāčuka Gardumi</span></div>
         <p>Premium mājražotāja konditoreja Mārupē. Kūkas īpašiem mirkļiem.</p>
       </div>
       <div>
