@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://lacukagardumi.lv/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://lacukagardumi.lv/assets/og-image.jpg</image:loc>
+      <image:title>Lāčuka Gardumi — mājražotāja konditoreja Mārupē</image:title>
+      <image:caption>Kūkas un gardumi pēc individuāla pasūtījuma Mārupē</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://lacukagardumi.lv/assets/hero.jpg</image:loc>
+      <image:title>Lāčuka Gardumi kūka ar zemenēm un bezē</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lacukagardumi.lv/assets/cake-featured.jpg</image:loc>
+      <image:title>Zemeņu kūka ar bezē</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lacukagardumi.lv/assets/flavor-snickers.jpg</image:loc>
+      <image:title>Snickers kūka</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lacukagardumi.lv/assets/flavor-zemenu.jpg</image:loc>
+      <image:title>Zemeņu plombīra kūka</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lacukagardumi.lv/assets/flavor-velvets.jpg</image:loc>
+      <image:title>Sarkanā velveta kūka</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lacukagardumi.lv/assets/flavor-medus.jpg</image:loc>
+      <image:title>Medus kūka</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lacukagardumi.lv/assets/ciparkuka.jpg</image:loc>
+      <image:title>Ciparkūka</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lacukagardumi.lv/assets/bento.jpg</image:loc>
+      <image:title>Bento kūciņa</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lacukagardumi.lv/assets/keksini.jpg</image:loc>
+      <image:title>Keksiņi</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lacukagardumi.lv/assets/cepumi.jpg</image:loc>
+      <image:title>Šokolādes cepumi</image:title>
+    </image:image>
+  </url>
+</urlset>

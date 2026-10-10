@@ -1,0 +1,6 @@
+# Robots.txt for lacukagardumi.lv
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://lacukagardumi.lv/sitemap.xml
